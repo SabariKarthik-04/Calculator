@@ -88,6 +88,8 @@ function reducer(state,{type,payload}){
         currentOperand: state.currentOperand.slice(0,-1)
       }
   }
+  default:
+    return state
 }
 
 function evaluate({currentOperand,previousOperand,operation}){
