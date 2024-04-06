@@ -87,9 +87,9 @@ function reducer(state,{type,payload}){
         ...state,
         currentOperand: state.currentOperand.slice(0,-1)
       }
-  }
-  default:
-    return state;
+    }
+    default:
+      return state;
 }
 
 function evaluate({currentOperand,previousOperand,operation}){
